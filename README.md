@@ -7,3 +7,4 @@ $ ln -s .dotfiles/.vimrc
 ```
 
 [vim-bootstrap repo](https://github.com/avelino/vim-bootstrap)
+[Gnome-color-scheme](http://mayccoll.github.io/Gogh/)
