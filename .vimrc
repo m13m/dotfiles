@@ -109,8 +109,6 @@ Plug 'jelera/vim-javascript-syntax'
 Plug 'arnaud-lb/vim-php-namespace'
 
 
-"*****************************************************************************
-"*****************************************************************************
 
 "" Include user's extra bundle
 if filereadable(expand("~/.vimrc.local.bundles"))
@@ -183,7 +181,7 @@ set number
 
 let no_buffers_menu=1
 if !exists('g:not_finish_vimplug')
-  colorscheme molokai
+  colorscheme seoul256 
 endif
 
 set mousemodel=popup
@@ -225,7 +223,7 @@ endif
 "" Disable the blinking cursor.
 set gcr=a:blinkon0
 set scrolloff=3
-
+set cursorline
 "" Status bar
 set laststatus=2
 
