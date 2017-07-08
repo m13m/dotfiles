@@ -3,6 +3,8 @@ NPM_PACKAGES="${HOME}/.npm-packages"
 
 PATH="$NPM_PACKAGES/bin:$PATH"
 
+export ACCESS_TOKEN="EAAOmOU5RCZAkBALHAcPV0ywWh5rzh8czlUGyzn437s7M4376SQULZBoaaD0RzikbFtPIrvB25VTrphGLmmEcWk2pe41w9EB23Mu3tSWRpwi3zu1qKLHejsMJyar5IoEj1FxhLmyGHlkGxs4PJTDesZCM0PtbUoYCisKARzeMAAbpXH0GKMk5CUDPng8JI0ZD"
+
 # Unset manpath so we can inherit from /etc/manpath via the `manpath` command
 unset MANPATH # delete if you already modified MANPATH elsewhere in your config
 export MANPATH="$NPM_PACKAGES/share/man:$(manpath)"
@@ -15,7 +17,7 @@ export ZSH=/home/maqbool/.oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="amuse"
+ZSH_THEME="ys"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
