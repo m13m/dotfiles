@@ -3,7 +3,6 @@ NPM_PACKAGES="${HOME}/.npm-packages"
 
 PATH="$NPM_PACKAGES/bin:$PATH"
 
-export ACCESS_TOKEN="EAAOmOU5RCZAkBALHAcPV0ywWh5rzh8czlUGyzn437s7M4376SQULZBoaaD0RzikbFtPIrvB25VTrphGLmmEcWk2pe41w9EB23Mu3tSWRpwi3zu1qKLHejsMJyar5IoEj1FxhLmyGHlkGxs4PJTDesZCM0PtbUoYCisKARzeMAAbpXH0GKMk5CUDPng8JI0ZD"
 
 # Unset manpath so we can inherit from /etc/manpath via the `manpath` command
 unset MANPATH # delete if you already modified MANPATH elsewhere in your config
