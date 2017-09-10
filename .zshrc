@@ -51,7 +51,7 @@ ZSH_THEME="half-life"
 # Uncomment the following line if you want to change the command execution time
 # stamp shown in the history command output.
 # The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
-# HIST_STAMPS="mm/dd/yyyy"
+HIST_STAMPS="mm/dd/yyyy"
 
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
@@ -66,7 +66,7 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-# export MANPATH="/usr/local/man:$MANPATH"
+export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -94,11 +94,16 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 export PATH=$HOME/bin:$PATH
 export PATH=$HOME/.local/bin/:$PATH
-alias clipp=\'xclip -selection c -o\'
-
-alias cclip=\'xclip -selection c -i\'
 # added by Anaconda3 4.4.0 installer
-export PATH="/home/maqbool/bin/anaconda3/bin:$PATH"
+#export PATH="/home/maqbool/bin/anaconda3/bin:$PATH"
 . $HOME/.asdf/asdf.sh
 
 . $HOME/.asdf/completions/asdf.bash
+
+# tabtab source for serverless package
+# uninstall by removing these lines or running `tabtab uninstall serverless`
+# tabtab source for sls package
+# uninstall by removing these lines or running `tabtab uninstall sls`
+export ERL_AFLAGS=-kernel shell_history enabled
+
+export PATH="/bin/anaconda3/bin:$PATH"
