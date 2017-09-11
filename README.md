@@ -9,5 +9,5 @@ $ mv * ~/.fonts
 $ fc-cache -v
 ```
 
-[vim-bootstrap repo](https://github.com/avelino/vim-bootstrap)
-[Gnome-color-scheme](http://mayccoll.github.io/Gogh/)
+* [vim-bootstrap repo](https://github.com/avelino/vim-bootstrap)
+* [Gnome-color-scheme](http://mayccoll.github.io/Gogh/)
