@@ -184,6 +184,11 @@ if !exists('g:not_finish_vimplug')
   colorscheme seoul256 
 endif
 
+
+" vim-plug
+Plug 'elixir-lang/vim-elixir'
+
+
 set mousemodel=popup
 set t_Co=256
 set guioptions=egmrti
