@@ -16,7 +16,7 @@ export ZSH=/home/maqbool/.oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="cloud"
+#ZSH_THEME="cloud"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -111,10 +111,10 @@ export PATH="/bin/anaconda3/bin:$PATH"
 ## Prompt
 
 
-#ZSH_THEME_CLOUD_PREFIX='☁🚀 ☁'
+ZSH_THEME_CLOUD_PREFIX='☁🚀☁'
 #ZSH_THEME_CLOUD_PREFIX='☁'
-#ZSH_THEME_CLOUD_PREFIX='☄️'
-ZSH_THEME_CLOUD_PREFIX='🐧'
+#ZSH_THEME_CLOUD_PREFIX='🦖'
+#ZSH_THEME_CLOUD_PREFIX='🐧'
 #ZSH_THEME_CLOUD_PREFIX='🐉'
 
 PROMPT='%{$fg_bold[cyan]%}$ZSH_THEME_CLOUD_PREFIX %{$fg_bold[green]%}%p %{$fg[green]%}%c %{$fg_bold[cyan]%}$(git_prompt_info)%{$fg_bold[blue]%} % %{$reset_color%}⚡  '
