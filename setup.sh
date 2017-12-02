@@ -35,6 +35,7 @@ echo  "Date : 20.10.2017 "
 # ack
 
 ln -sf `pwd`/ack/ackrc ~/.ackrc
+echo "## Ack"
 printf "\033[01;31m######################\n"
 
 #fonts
@@ -43,22 +44,28 @@ ln -sf `pwd`/fonts ~/.fonts
 cd ~
 fc-cache 
 cd - > /dev/null #Hack : it writes previous directory to standard out(1)
+echo "## Fonts"
 printf "\033[0;32m############################################\n" 
 
 #zsh
 
 ln -sf `pwd`/zsh/.zshrc ~/.zshrc
+echo "## Zsh"
 printf "\033[0;35m##################################################################\n"
+
+# Plug (to be used with nvim)
+# https://github.com/junegunn/vim-plug
+curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim > /dev/null
+
 
 #nvim
 
 mkdir -p ~/.config/nvim
 ln -sf `pwd`/nvim/init.vim ~/.config/nvim/
+echo "To install the nvim plugins, open up vim and type ':PlugInstall'\n"
+
 printf "\033[0;34m########################################################################################\n"
 
 
-
-
-
-
-
+notify-send "💖 enjoy! 💖"
