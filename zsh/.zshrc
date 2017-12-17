@@ -96,8 +96,8 @@ export MANPATH="/usr/local/man:$MANPATH"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 export PATH=$HOME/bin:$PATH
 export PATH=$HOME/.local/bin/:$PATH
-# added by Anaconda3 4.4.0 installer
-#export PATH="/home/maqbool/bin/anaconda3/bin:$PATH"
+ added by Anaconda3 4.4.0 installer
+export PATH="/home/maqbool/bin/anaconda3/bin:$PATH"
 . $HOME/.asdf/asdf.sh
 
 . $HOME/.asdf/completions/asdf.bash
