@@ -3,7 +3,7 @@ NPM_PACKAGES="${HOME}/.npm-packages"
 
 PATH="$NPM_PACKAGES/bin:$PATH"
 
-export PATH="$PATH:/home/maqbool/bin/depot_tools"
+#export PATH="$PATH:/home/maqbool/bin/depot_tools"
 
 export LD_LIBRARY_PATH=/usr/local/lib
 # Unset manpath so we can inherit from /etc/manpath via the `manpath` command
@@ -96,7 +96,7 @@ export MANPATH="/usr/local/man:$MANPATH"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 export PATH=$HOME/bin:$PATH
 export PATH=$HOME/.local/bin/:$PATH
- added by Anaconda3 4.4.0 installer
+# added by Anaconda3 4.4.0 installer
 export PATH="/home/maqbool/bin/anaconda3/bin:$PATH"
 . $HOME/.asdf/asdf.sh
 
@@ -113,7 +113,7 @@ export PATH="/bin/anaconda3/bin:$PATH"
 ## Prompt
 
 
-ZSH_THEME_CLOUD_PREFIX='☁🚀 ☁'
+ZSH_THEME_CLOUD_PREFIX='☁ 🚀 ☁'
 #ZSH_THEME_CLOUD_PREFIX='☁'
 #ZSH_THEME_CLOUD_PREFIX='🦖'
 #ZSH_THEME_CLOUD_PREFIX='🐧'
