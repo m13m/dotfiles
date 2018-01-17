@@ -97,7 +97,7 @@ export MANPATH="/usr/local/man:$MANPATH"
 export PATH=$HOME/bin:$PATH
 export PATH=$HOME/.local/bin/:$PATH
 # added by Anaconda3 4.4.0 installer
-export PATH="/home/maqbool/bin/anaconda3/bin:$PATH"
+export PATH="/home/maqbool/bin/Anaconda3/bin:$PATH"
 . $HOME/.asdf/asdf.sh
 
 . $HOME/.asdf/completions/asdf.bash
@@ -108,7 +108,7 @@ export PATH="/home/maqbool/bin/anaconda3/bin:$PATH"
 # uninstall by removing these lines or running `tabtab uninstall sls`
 export ERL_AFLAGS=-kernel shell_history enabled
 
-export PATH="/bin/anaconda3/bin:$PATH"
+#export PATH="/bin/Anaconda3/bin:$PATH"
 
 ## Prompt
 
