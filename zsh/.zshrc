@@ -96,6 +96,7 @@ export MANPATH="/usr/local/man:$MANPATH"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 export PATH=$HOME/bin:$PATH
 export PATH=$HOME/.local/bin/:$PATH
+export PATH=$HOME/.asdf/installs/elixir/1.5.3/.mix/:$PATH
 # added by Anaconda3 4.4.0 installer
 export PATH="/home/maqbool/bin/Anaconda3/bin:$PATH"
 . $HOME/.asdf/asdf.sh
