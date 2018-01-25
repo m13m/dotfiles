@@ -143,3 +143,4 @@ RPROMPT=''
 RPROMPT2=''
 
 set t_Co=256
+export GOPATH=$HOME/bin/go
