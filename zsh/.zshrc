@@ -1,4 +1,13 @@
-#NPM
+# iex 
+export ERL_AFLAGS="-kernel shell_history enabled"
+
+#ecto
+export ECTO_EDITOR=subl
+
+#exdoc
+PATH="/home/maqbool/.mix/escripts:$PATH"
+
+#npm
 NPM_PACKAGES="${HOME}/.npm-packages"
 
 PATH="$NPM_PACKAGES/bin:$PATH"
@@ -97,6 +106,8 @@ export MANPATH="/usr/local/man:$MANPATH"
 export PATH=$HOME/bin:$PATH
 export PATH=$HOME/.local/bin/:$PATH
 export PATH=$HOME/.asdf/installs/elixir/1.5.3/.mix/:$PATH
+export PATH=$HOME/.asdf/installs/elixir/1.6.0/.mix/escripts/:$PATH
+
 # added by Anaconda3 4.4.0 installer
 export PATH="/home/maqbool/bin/Anaconda3/bin:$PATH"
 . $HOME/.asdf/asdf.sh
@@ -112,12 +123,10 @@ export ERL_AFLAGS=-kernel shell_history enabled
 #export PATH="/bin/Anaconda3/bin:$PATH"
 
 ## Prompt
-
-
-ZSH_THEME_CLOUD_PREFIX='☁ 🚀 ☁'
+#ZSH_THEME_CLOUD_PREFIX='☁ 🚀 ☁'
 #ZSH_THEME_CLOUD_PREFIX='☁'
 #ZSH_THEME_CLOUD_PREFIX='🦖'
-#ZSH_THEME_CLOUD_PREFIX='🐧'
+ZSH_THEME_CLOUD_PREFIX='🐧'
 #ZSH_THEME_CLOUD_PREFIX='🐉'
 
 PROMPT='%{$fg_bold[cyan]%}$ZSH_THEME_CLOUD_PREFIX %{$fg_bold[green]%}%p %{$fg[green]%}%c %{$fg_bold[cyan]%}$(git_prompt_info)%{$fg_bold[blue]%} % %{$reset_color%}⚡  '
