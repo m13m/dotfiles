@@ -1,17 +1,18 @@
-#cd shortcuts
+# OCaml Version
+eval `opam config env` 
+
+
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 alias .....='cd ../../../..'
 
-# iex 
-export ERL_AFLAGS="-kernel shell_history enabled"
-
-#ecto
-export ECTO_EDITOR=subl
-
 #exdoc
 PATH="/home/maqbool/.mix/escripts:$PATH"
+
+#JAVA_HOME
+
+export JAVA_HOME="/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.151-1.b12.fc27.x86_64"
 
 #npm
 NPM_PACKAGES="${HOME}/.npm-packages"
@@ -19,6 +20,7 @@ NPM_PACKAGES="${HOME}/.npm-packages"
 PATH="$NPM_PACKAGES/bin:$PATH"
 
 #export PATH="$PATH:/home/maqbool/bin/depot_tools"
+export TERM=xterm-color
 
 export LD_LIBRARY_PATH=/usr/local/lib
 # Unset manpath so we can inherit from /etc/manpath via the `manpath` command
@@ -159,3 +161,5 @@ RPROMPT2=''
 
 set t_Co=256
 export GOPATH=$HOME/bin/go
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
