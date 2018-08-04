@@ -2,18 +2,12 @@
 eval `opam config env` 
 
 
-alias ..='cd ..'
-alias ...='cd ../..'
-alias ....='cd ../../..'
-alias .....='cd ../../../..'
-
 #exdoc
 PATH="/home/maqbool/.mix/escripts:$PATH"
 
-#JAVA_HOME
+# Java HOME
 
-export JAVA_HOME="/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.151-1.b12.fc27.x86_64"
-
+export JAVA_HOME="/usr/lib/jvm/java-1.8.0"
 #npm
 NPM_PACKAGES="${HOME}/.npm-packages"
 
@@ -113,11 +107,8 @@ export MANPATH="/usr/local/man:$MANPATH"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 export PATH=$HOME/bin:$PATH
 export PATH=$HOME/.local/bin/:$PATH
-export PATH=$HOME/.asdf/installs/elixir/1.5.3/.mix/:$PATH
 export PATH=$HOME/.asdf/installs/elixir/1.6.0/.mix/escripts/:$PATH
 
-# added by Anaconda3 4.4.0 installer
-export PATH="/home/maqbool/bin/Anaconda3/bin:$PATH"
 . $HOME/.asdf/asdf.sh
 
 . $HOME/.asdf/completions/asdf.bash
@@ -131,10 +122,10 @@ export ERL_AFLAGS=-kernel shell_history enabled
 #export PATH="/bin/Anaconda3/bin:$PATH"
 
 ## Prompt
-#ZSH_THEME_CLOUD_PREFIX='☁ 🚀 ☁'
+ZSH_THEME_CLOUD_PREFIX='☁ 🚀 ☁'
 #ZSH_THEME_CLOUD_PREFIX='☁'
 #ZSH_THEME_CLOUD_PREFIX='🦖'
-ZSH_THEME_CLOUD_PREFIX='🐧'
+#ZSH_THEME_CLOUD_PREFIX='🐧'
 #ZSH_THEME_CLOUD_PREFIX='🐉'
 
 PROMPT='%{$fg_bold[cyan]%}$ZSH_THEME_CLOUD_PREFIX %{$fg_bold[green]%}%p %{$fg[green]%}%c %{$fg_bold[cyan]%}$(git_prompt_info)%{$fg_bold[blue]%} % %{$reset_color%}⚡  '
