@@ -1,6 +1,11 @@
 # OCaml Version
 eval `opam config env` 
 
+#Stack Build tool
+autoload -U +X compinit && compinit
+autoload -U +X bashcompinit && bashcompinit
+eval "$(stack --bash-completion-script stack)"
+
 
 #exdoc
 PATH="/home/maqbool/.mix/escripts:$PATH"
@@ -151,6 +156,17 @@ RPROMPT=''
 RPROMPT2=''
 
 set t_Co=256
+#Scala
+export PATH="$HOME/bin/scala/bin:$PATH"
+#Golang
 export GOPATH=$HOME/bin/go
-
+#Yarn
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+#rebar3
+export PATH=/home/maqbool/.cache/rebar3/bin:$PATH
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/home/maqbool/bin/google-cloud-sdk/path.zsh.inc' ]; then source '/home/maqbool/bin/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/home/maqbool/bin/google-cloud-sdk/completion.zsh.inc' ]; then source '/home/maqbool/bin/google-cloud-sdk/completion.zsh.inc'; fi
