@@ -159,7 +159,8 @@ set t_Co=256
 #Scala
 export PATH="$HOME/bin/scala/bin:$PATH"
 #Golang
-export GOPATH=$HOME/bin/go
+export GOROOT=$HOME/bin/go
+export PATH=$PATH:$GOROOT/bin
 #Yarn
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 #rebar3
