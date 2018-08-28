@@ -13,8 +13,7 @@ eval "$(stack --bash-completion-script stack)"
 PATH="/home/maqbool/.mix/escripts:$PATH"
 
 # Java HOME
-
-export JAVA_HOME="/usr/lib/jvm/java-1.8.0"
+export JAVA_HOME="/usr/java/jdk-10.0.2/"
 #npm
 NPM_PACKAGES="${HOME}/.npm-packages"
 
