@@ -1,4 +1,6 @@
-
+#Alias
+alias cat="bat"
+alias less="bat"
 
 # OCaml Version
 eval `opam config env` 
@@ -8,6 +10,8 @@ autoload -U +X compinit && compinit
 autoload -U +X bashcompinit && bashcompinit
 eval "$(stack --bash-completion-script stack)"
 
+#exercism
+PATH="/home/maqbool/bin/exercism-linux-64bit:$PATH"
 
 #exdoc
 PATH="/home/maqbool/.mix/escripts:$PATH"
@@ -79,7 +83,7 @@ HIST_STAMPS="mm/dd/yyyy"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(mix cabal asdf scala )
+plugins=(mix cabal asdf scala docker )
 
 source $ZSH/oh-my-zsh.sh
 
