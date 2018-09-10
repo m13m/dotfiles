@@ -1,7 +1,11 @@
-#Alias
+#alias
 alias cat="bat"
 alias less="bat"
 
+#clipboard alias (xsel)
+
+alias copy="xsel --clipboard < "
+alias paste="xsel --clipboard"
 # OCaml Version
 eval `opam config env` 
 
