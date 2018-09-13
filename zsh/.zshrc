@@ -1,11 +1,12 @@
 #alias
 alias cat="bat"
 alias less="bat"
+alias pys="python -m SimpleHTTPServer"
 
 #clipboard alias (xsel)
-
 alias copy="xsel --clipboard < "
 alias paste="xsel --clipboard"
+
 # OCaml Version
 eval `opam config env` 
 
