@@ -1,3 +1,6 @@
+# Development config setup for Linux 
+
+
 #alias
 alias cat="bat"
 alias less="bat"
@@ -18,14 +21,13 @@ eval "$(stack --bash-completion-script stack)"
 #exercism
 PATH="/home/maqbool/bin/exercism-linux-64bit:$PATH"
 
-#exdoc
-PATH="/home/maqbool/.mix/escripts:$PATH"
-
+#hadoop
+PATH="/usr/local/hadoop/bin:$PATH"
 # Java HOME
 export JAVA_HOME="/usr/java/jdk-10.0.2/"
+
 #npm
 NPM_PACKAGES="${HOME}/.npm-packages"
-
 PATH="$NPM_PACKAGES/bin:$PATH"
 
 #export PATH="$PATH:/home/maqbool/bin/depot_tools"
@@ -38,7 +40,7 @@ export MANPATH="$NPM_PACKAGES/share/man:$(manpath)"
 alias open="xdg-open"
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
-alias speedtest="speedtest-net"
+
 # Path to your oh-my-zsh installation.
 export ZSH=/home/maqbool/.oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
@@ -88,7 +90,7 @@ HIST_STAMPS="mm/dd/yyyy"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(mix cabal asdf scala docker )
+plugins=(mix cabal asdf zsh-autosuggestions docker )
 
 source $ZSH/oh-my-zsh.sh
 
@@ -118,8 +120,8 @@ export MANPATH="/usr/local/man:$MANPATH"
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+# alias zshconfig="vim ~/.zshrc"
+# alias ohmyzsh="vim ~/.oh-my-zsh"
 export PATH=$HOME/bin:$PATH
 export PATH=$HOME/.local/bin/:$PATH
 export PATH=$HOME/.asdf/installs/elixir/1.6.0/.mix/escripts/:$PATH
@@ -137,12 +139,12 @@ export ERL_AFLAGS=-kernel shell_history enabled
 
 ## Prompt
 
-ZSH_THEME_CLOUD_PREFIX='✌️ '
+#ZSH_THEME_CLOUD_PREFIX='✌️ '
 #ZSH_THEME_CLOUD_PREFIX='☁ 🚀 ☁'
 #ZSH_THEME_CLOUD_PREFIX='☁'
 #ZSH_THEME_CLOUD_PREFIX='🦖'
 #ZSH_THEME_CLOUD_PREFIX='🐧'
-#ZSH_THEME_CLOUD_PREFIX='🐉'
+ZSH_THEME_CLOUD_PREFIX='🐉'
 
 PROMPT='%{$fg_bold[cyan]%}$ZSH_THEME_CLOUD_PREFIX %{$fg_bold[green]%}%p %{$fg[green]%}%c %{$fg_bold[cyan]%}$(git_prompt_info)%{$fg_bold[blue]%} % %{$reset_color%}⚡  '
 
@@ -167,18 +169,19 @@ RPROMPT=''
 RPROMPT2=''
 
 set t_Co=256
+
 #Scala
 export PATH="$HOME/bin/scala/bin:$PATH"
+
 #Golang
-export GOROOT=$HOME/bin/go
-export PATH=$PATH:$GOROOT/bin
+export PATH=$PATH:/usr/local/go/bin
+
+
+
 #Yarn
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
 #rebar3
 export PATH=/home/maqbool/.cache/rebar3/bin:$PATH
 
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/home/maqbool/bin/google-cloud-sdk/path.zsh.inc' ]; then source '/home/maqbool/bin/google-cloud-sdk/path.zsh.inc'; fi
 
-# The next line enables shell command completion for gcloud.
-if [ -f '/home/maqbool/bin/google-cloud-sdk/completion.zsh.inc' ]; then source '/home/maqbool/bin/google-cloud-sdk/completion.zsh.inc'; fi
