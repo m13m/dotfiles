@@ -1,7 +1,7 @@
 # Development config setup for Linux 
 
-
 #alias
+alias vim="nvim"
 alias cat="bat"
 alias less="bat"
 alias pys="python -m SimpleHTTPServer"
@@ -81,7 +81,7 @@ export ZSH=/home/maqbool/.oh-my-zsh
 # Uncomment the following line if you want to change the command execution time
 # stamp shown in the history command output.
 # The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
-HIST_STAMPS="mm/dd/yyyy"
+HIST_STAMPS="dd/mm/yyyy"
 
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
@@ -90,7 +90,7 @@ HIST_STAMPS="mm/dd/yyyy"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(mix cabal asdf zsh-autosuggestions docker )
+plugins=(mix cabal asdf docker systemd)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -124,7 +124,6 @@ export MANPATH="/usr/local/man:$MANPATH"
 # alias ohmyzsh="vim ~/.oh-my-zsh"
 export PATH=$HOME/bin:$PATH
 export PATH=$HOME/.local/bin/:$PATH
-export PATH=$HOME/.asdf/installs/elixir/1.6.0/.mix/escripts/:$PATH
 export PATH=$HOME/.cabal/bin/:$PATH
 . $HOME/.asdf/asdf.sh
 
@@ -173,9 +172,6 @@ set t_Co=256
 #Scala
 export PATH="$HOME/bin/scala/bin:$PATH"
 
-#Golang
-export PATH=$PATH:/usr/local/go/bin
-
 
 
 #Yarn
@@ -185,3 +181,4 @@ export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 export PATH=/home/maqbool/.cache/rebar3/bin:$PATH
 
 
+export GOPATH=$HOME/go
