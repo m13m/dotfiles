@@ -2,9 +2,6 @@
 
 #alias
 alias vim="nvim"
-alias cat="bat"
-alias less="bat"
-alias pys="python -m SimpleHTTPServer"
 
 #clipboard alias (xsel)
 alias copy="xsel --clipboard < "
