@@ -65,7 +65,7 @@ export ZSH=/home/maqbool/.oh-my-zsh
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
- ENABLE_CORRECTION="true"
+# ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
  COMPLETION_WAITING_DOTS="true"
@@ -176,6 +176,9 @@ export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
 #rebar3
 export PATH=/home/maqbool/.cache/rebar3/bin:$PATH
-
-
+#golang
 export GOPATH=$HOME/go
+export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
+
+#K8s 
+if [ /usr/local/bin/kubectl ]; then source <(kubectl completion zsh); fi
