@@ -2,6 +2,7 @@
 
 #alias
 alias vim="nvim"
+alias less="bat"
 
 #clipboard alias (xsel)
 alias copy="xsel --clipboard < "
