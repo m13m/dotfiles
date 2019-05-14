@@ -1,7 +1,6 @@
 # Development config setup for Linux 
 
 #alias
-alias vim="nvim"
 alias less="bat"
 
 #clipboard alias (xsel)
@@ -9,11 +8,10 @@ alias copy="xsel --clipboard < "
 
 # OCaml Version
 eval `opam config env` 
+#dotnet
+export DOTNET_ROOT=$HOME/dotnet
+export PATH=$PATH:$HOME/dotnet
 
-#Stack Build tool
-autoload -U +X compinit && compinit
-autoload -U +X bashcompinit && bashcompinit
-eval "$(stack --bash-completion-script stack)"
 
 #exercism
 PATH="/home/maqbool/bin/exercism-linux-64bit:$PATH"
@@ -121,7 +119,6 @@ export MANPATH="/usr/local/man:$MANPATH"
 # alias ohmyzsh="vim ~/.oh-my-zsh"
 export PATH=$HOME/bin:$PATH
 export PATH=$HOME/.local/bin/:$PATH
-export PATH=$HOME/.cabal/bin/:$PATH
 . $HOME/.asdf/asdf.sh
 
 . $HOME/.asdf/completions/asdf.bash
@@ -130,7 +127,6 @@ export PATH=$HOME/.cabal/bin/:$PATH
 # uninstall by removing these lines or running `tabtab uninstall serverless`
 # tabtab source for sls package
 # uninstall by removing these lines or running `tabtab uninstall sls`
-export ERL_AFLAGS=-kernel shell_history enabled
 
 
 ## Prompt
@@ -169,7 +165,8 @@ set t_Co=256
 #Scala
 export PATH="$HOME/bin/scala/bin:$PATH"
 
-
+#Haskell
+export PATH="$HOME/.cabal/bin:$HOME/.ghcup/bin:$PATH"
 
 #Yarn
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
