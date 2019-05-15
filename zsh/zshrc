@@ -8,18 +8,12 @@ alias copy="xsel --clipboard < "
 
 # OCaml Version
 eval `opam config env` 
-#dotnet
-export DOTNET_ROOT=$HOME/dotnet
-export PATH=$PATH:$HOME/dotnet
 
-
-#exercism
-PATH="/home/maqbool/bin/exercism-linux-64bit:$PATH"
-
-#hadoop
-PATH="/usr/local/hadoop/bin:$PATH"
 # Java HOME
 export JAVA_HOME="/usr/java/jdk-10.0.2/"
+
+# Kerl
+export KERL_CONFIGURE_OPTIONS="--disable-debug --without-javac"
 
 #npm
 NPM_PACKAGES="${HOME}/.npm-packages"
