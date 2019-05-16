@@ -1,0 +1,2 @@
+UD = "/home/maqbool/bin/dotfiles/erlang/user_default.erl".
+shell_default:c(UD).
