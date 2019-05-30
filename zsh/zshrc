@@ -2,7 +2,7 @@
 
 #alias
 alias less="bat"
-
+alias server="python3 -m http.server"
 #clipboard alias (xsel)
 alias copy="xsel --clipboard < "
 
