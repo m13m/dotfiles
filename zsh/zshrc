@@ -172,8 +172,6 @@ export GOPATH=$HOME/go
 export GOROOT="/home/maqbool/.asdf/installs/golang/1.12.5/go"
 export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
 
-# OCaml Version
-eval `opam config env` 
 
 # Kerl
 export KERL_CONFIGURE_OPTIONS="--disable-debug --without-javac"
