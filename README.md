@@ -11,19 +11,19 @@
 ## Ruby 
 
 ```bash
- $ ln -s ~/bin/dotfiles/ruby/irbrc .irbrc
+ $ ln -s ~/Code/dotfiles/ruby/irbrc .irbrc
  $ gem install bond
 
 ```
 ## Zsh
 ```bash
- $ ln -s ~/bin/dotfiles/zsh/zshrc .zshrc
+ $ ln -s ~/Code/dotfiles/zsh/zshrc .zshrc
 ```
 
 ## Git
 
 ```bash
- $ ln -s Projects/dotfiles/git/gitconfig .gitconfig
+ $ ln -s ~/Cod/dotfiles/git/gitconfig .gitconfig
 ```
 
 ## Haskel
