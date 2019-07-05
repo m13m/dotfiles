@@ -4,6 +4,9 @@ alias server="python3 -m http.server"
 #clipboard alias (xsel)
 alias copy="xsel --clipboard < "
 
+#Trash Path
+export TRASH=/home/maqbool/.local/share/Trash/files
+
 #export PATH="$PATH:/home/maqbool/bin/depot_tools"
 export TERM=xterm-color
 
