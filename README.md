@@ -4,26 +4,26 @@
 ## Python
 
 ```bash
- $ ln -s ~/bin/dotfiles/python/pythonrc .pythonrc
+ $ ln -sf ~/bin/dotfiles/python/pythonrc .pythonrc
 
  $ export PYTHONSTARTUP=~/.pythonrc
 ```
 ## Ruby 
 
 ```bash
- $ ln -s ~/Code/dotfiles/ruby/irbrc .irbrc
+ $ ln -sf ~/Code/dotfiles/ruby/irbrc .irbrc
  $ gem install bond
 
 ```
 ## Zsh
 ```bash
- $ ln -s ~/Code/dotfiles/zsh/zshrc .zshrc
+ $ ln -sf ~/Code/dotfiles/zsh/zshrc .zshrc
 ```
 
 ## Git
 
 ```bash
- $ ln -s ~/Cod/dotfiles/git/gitconfig .gitconfig
+ $ ln -sf ~/Cod/dotfiles/git/gitconfig .gitconfig
 ```
 
 ## Haskel
