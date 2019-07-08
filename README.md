@@ -26,7 +26,7 @@
  $ ln -sf ~/Cod/dotfiles/git/gitconfig .gitconfig
 ```
 
-## Haskel
+## Haskell
 ```bash
 curl https://get-ghcup.haskell.org -sSf | sh
 
