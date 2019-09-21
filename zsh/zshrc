@@ -1,10 +1,14 @@
 #alias
+alias k="kubectl"
 alias c="cd ~/Code"
 alias less="bat"
 alias vim="nvim"
 alias server="python3 -m http.server"
 #clipboard alias (xsel)
 alias copy="xsel --clipboard < "
+
+#Istio
+export PATH="$PATH:/home/maqbool/bin/istio-1.2.5/bin"
 
 
 #export PATH="$PATH:/home/maqbool/bin/depot_tools"
@@ -170,5 +174,3 @@ export KERL_CONFIGURE_OPTIONS="--disable-debug --without-javac"
 NPM_PACKAGES="${HOME}/.npm-packages"
 PATH="$NPM_PACKAGES/bin:$PATH"
 
-#K8s 
-if [ /usr/local/bin/kubectl ]; then source <(kubectl completion zsh); fi

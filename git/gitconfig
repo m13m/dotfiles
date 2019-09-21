@@ -9,3 +9,5 @@
         whatwas = "log --follow --"
 [color]
 	ui = true
+[rebase]
+	autoStash = true
