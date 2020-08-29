@@ -1,4 +1,11 @@
+
 #alias
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+alias ......="cd ../../../../.."
+
 alias k="kubectl"
 alias c="cd ~/Code"
 alias less="bat"
