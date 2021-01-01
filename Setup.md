@@ -3,7 +3,12 @@
 
 ## Programming Languages
 
-
+* Haskell
+* Golang
+* Erlang
+* Elixir
+* Python
+* JS/Nodejs
 
 ## Frameworks 
 
