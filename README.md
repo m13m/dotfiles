@@ -15,12 +15,12 @@
  $ gem install bond
 
 ```
-## Zsh
+## zsh
 ```bash
  $ ln -sf ~/Code/dotfiles/zsh/zshrc .zshrc
 ```
 
-## Git
+## git
 
 ```bash
  $ ln -sf ~/Cod/dotfiles/git/gitconfig .gitconfig
@@ -30,6 +30,14 @@
 ```bash
 curl https://get-ghcup.haskell.org -sSf | sh
 
+```
+
+# asdf
+
+```
+git clone https://github.com/asdf-vm/asdf.git ~/.asdf
+cd ~/.asdf
+git checkout "$(git describe --abbrev=0 --tags)"
 ```
 
 
