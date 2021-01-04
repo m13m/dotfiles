@@ -32,7 +32,5 @@ curl https://get-ghcup.haskell.org -sSf | sh
 
 ```
 
-## Color Scheme
-[Gnome terminal color scheme](http://mayccoll.github.io/Gogh/)
 
 
