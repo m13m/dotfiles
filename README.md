@@ -1,38 +1,38 @@
 #  🐧 Development environment setup
 
 
-## Python
+### Python
 
 ```bash
  $ ln -sf ~/bin/dotfiles/python/pythonrc .pythonrc
 
  $ export PYTHONSTARTUP=~/.pythonrc
 ```
-## Ruby 
+### Ruby 
 
 ```bash
  $ ln -sf ~/Code/dotfiles/ruby/irbrc .irbrc
  $ gem install bond
 
 ```
-## zsh
+### zsh
 ```bash
  $ ln -sf ~/Code/dotfiles/zsh/zshrc .zshrc
 ```
 
-## git
+### git
 
 ```bash
  $ ln -sf ~/Cod/dotfiles/git/gitconfig .gitconfig
 ```
 
-## Haskell
+### Haskell
 ```bash
 curl https://get-ghcup.haskell.org -sSf | sh
 
 ```
 
-# asdf
+### asdf
 
 ```
 git clone https://github.com/asdf-vm/asdf.git ~/.asdf
@@ -40,5 +40,9 @@ cd ~/.asdf
 git checkout "$(git describe --abbrev=0 --tags)"
 ```
 
+### fonts
 
+```
+https://coding-fonts.css-tricks.com/
+```
 
