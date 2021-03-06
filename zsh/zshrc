@@ -10,6 +10,11 @@ alias c="cd ~/Code"
 alias server="python3 -m http.server"
 #clipboard alias (xsel)
 alias copy="xsel --clipboard < "
+alias dua="notify-send 'سبحان اللّه وبحمده ، عدد خلقه ، ورضا نفسه ، وزنة عرْشه ، ومداد كلماته'"
+
+#BEAM env
+export ERL_AFLAGS="-kernel shell_history enabled"
+
 
 #Istio
 #export PATH="$PATH:/home/maqbool/bin/istio-1.2.5/bin"
@@ -118,6 +123,7 @@ export MANPATH="/usr/local/man:$MANPATH"
 # tabtab source for sls package
 # uninstall by removing these lines or running `tabtab uninstall sls`
 
+alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 
 ## Prompt
 
@@ -178,3 +184,4 @@ set t_Co=256
 #NPM_PACKAGES="${HOME}/.npm-packages"
 #PATH="$NPM_PACKAGES/bin:$PATH"
 
+eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
