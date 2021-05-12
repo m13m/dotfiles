@@ -35,7 +35,7 @@ export ZSH=/home/khan/.oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="ys"
+ZSH_THEME="robbyrussell"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -185,3 +185,6 @@ set t_Co=256
 #PATH="$NPM_PACKAGES/bin:$PATH"
 
 eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+alias k=kubectl
+complete -F __start_kubectl k
+[[ /home/linuxbrew/.linuxbrew/bin/kubectl ]] && source <(kubectl completion zsh)

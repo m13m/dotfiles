@@ -46,3 +46,6 @@ git checkout "$(git describe --abbrev=0 --tags)"
 https://coding-fonts.css-tricks.com/
 ```
 
+```
+sudo apt install fonts-noto 
+```
