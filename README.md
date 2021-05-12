@@ -49,3 +49,12 @@ https://coding-fonts.css-tricks.com/
 ```
 sudo apt install fonts-noto 
 ```
+
+```
+sudo apt install unity-tweak-tool
+sudo apt install unity-lens-applications
+sudo apt install unity-lens-music
+sudo apt install unity-lens-video
+sudo apt install unity-lens-files
+sudo apt install unity-lens-photos
+```
