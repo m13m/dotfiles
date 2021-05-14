@@ -126,10 +126,10 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 ## Prompt
 
 #ZSH_THEME_CLOUD_PREFIX='✌️ '
-ZSH_THEME_CLOUD_PREFIX='☁ 🚀 ☁'
+#ZSH_THEME_CLOUD_PREFIX='☁ 🚀 ☁'
 #ZSH_THEME_CLOUD_PREFIX='☁'
 #ZSH_THEME_CLOUD_PREFIX='🦖'
-#ZSH_THEME_CLOUD_PREFIX='🐧'
+ZSH_THEME_CLOUD_PREFIX='🐧'
 #ZSH_THEME_CLOUD_PREFIX='🐉'
 
 PROMPT='%{$fg_bold[cyan]%}$ZSH_THEME_CLOUD_PREFIX %{$fg_bold[green]%}%p %{$fg[green]%}%c %{$fg_bold[cyan]%}$(git_prompt_info)%{$fg_bold[blue]%} % %{$reset_color%}⚡  '
@@ -174,8 +174,6 @@ set t_Co=256
 #export GOROOT="/home/maqbool/.asdf/installs/golang/1.12.5/go"
 #export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
 
-
-# Kerl
-#export KERL_CONFIGURE_OPTIONS="--disable-debug --without-javac"
-
+# Erlang docs config
+export KERL_BUILD_DOCS=yes
 

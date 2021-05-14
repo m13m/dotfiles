@@ -58,3 +58,11 @@ sudo apt install unity-lens-video
 sudo apt install unity-lens-files
 sudo apt install unity-lens-photos
 ```
+
+### asdf setup erlang
+https://github.com/asdf-vm/asdf-erlang#ubuntu-2004-lts
+
+
+### Docker setup
+(Non root user)
+https://docs.docker.com/engine/install/linux-postinstall/
