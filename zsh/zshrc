@@ -1,12 +1,7 @@
 #alias
-alias ..="cd .."
-alias ...="cd ../.."
-alias ....="cd ../../.."
-alias .....="cd ../../../.."
-alias ......="cd ../../../../.."
 alias k="kubectl"
-alias c="cd ~/Code"
 alias server="python3 -m http.server"
+alias mixtest="fswatch -o lib test | xargs -n1 -I{} mix test"
 #clipboard alias (xsel)
 alias copy="xsel --clipboard < "
 
