@@ -7,6 +7,7 @@
 	st = status
 	co = checkout
         whatwas = "log --follow --"
+	recent = branch --sort=-committerdate --format=\"%(committerdate:relative)%09%(refname:short)\"
 [color]
 	ui = true
 [rebase]

@@ -177,3 +177,4 @@ set t_Co=256
 # Erlang docs config
 export KERL_BUILD_DOCS=yes
 
+if [ -e /home/maqbool/.nix-profile/etc/profile.d/nix.sh ]; then . /home/maqbool/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer

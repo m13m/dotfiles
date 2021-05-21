@@ -1,4 +1,4 @@
-#  🐧 Development environment setup
+##  🐧 Development environment setup
 
 
 ### Python
@@ -45,19 +45,12 @@ git checkout "$(git describe --abbrev=0 --tags)"
 ```
 https://coding-fonts.css-tricks.com/
 ```
+```sudo apt-get install fonts-powerline```
 
 ```
 sudo apt install fonts-noto 
 ```
 
-```
-sudo apt install unity-tweak-tool
-sudo apt install unity-lens-applications
-sudo apt install unity-lens-music
-sudo apt install unity-lens-video
-sudo apt install unity-lens-files
-sudo apt install unity-lens-photos
-```
 
 ### asdf setup erlang
 https://github.com/asdf-vm/asdf-erlang#ubuntu-2004-lts
@@ -66,3 +59,7 @@ https://github.com/asdf-vm/asdf-erlang#ubuntu-2004-lts
 ### Docker setup
 (Non root user)
 https://docs.docker.com/engine/install/linux-postinstall/
+
+
+### Tools
+FzF finder ```sudo apt-get install fzf```
