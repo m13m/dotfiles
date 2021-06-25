@@ -1,3 +1,5 @@
+export ERL_AFLAGS="-kernel shell_history enabled"
+
 #alias
 alias k="kubectl"
 alias server="python3 -m http.server"
@@ -9,9 +11,7 @@ alias copy="xsel --clipboard < "
 export ERL_AFLAGS="-kernel shell_history enabled"
 
 
-#Istio
-#export PATH="$PATH:/home/maqbool/bin/istio-1.2.5/bin"
-
+export PATH="$PATH:/home/maqbool/.local/bin"
 
 #export PATH="$PATH:/home/maqbool/bin/depot_tools"
 export TERM=xterm-color
@@ -171,5 +171,6 @@ set t_Co=256
 
 # Erlang docs config
 export KERL_BUILD_DOCS=yes
+[[ -e "/home/maqbool/.local/lib/python3.8/site-packages/oci_cli/bin/oci_autocomplete.sh" ]] && source "/home/maqbool/.local/lib/python3.8/site-packages/oci_cli/bin/oci_autocomplete.sh"
 
 if [ -e /home/maqbool/.nix-profile/etc/profile.d/nix.sh ]; then . /home/maqbool/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer

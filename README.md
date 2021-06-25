@@ -1,6 +1,9 @@
 ##  🐧 Development environment setup
+### Typescript
 
-
+```bash
+$ npm install -g typescript
+```
 ### Python
 
 ```bash
