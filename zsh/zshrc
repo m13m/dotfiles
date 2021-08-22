@@ -1,6 +1,7 @@
 export ERL_AFLAGS="-kernel shell_history enabled"
 
 #alias
+alias showip="ip -c -br address show"
 alias k="kubectl"
 alias server="python3 -m http.server"
 alias mixtest="fswatch -o lib test | xargs -n1 -I{} mix test"
@@ -150,6 +151,7 @@ RPROMPT=''
 RPROMPT2=''
 
 set t_Co=256
+export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 
 #Scala
 #export PATH="$HOME/bin/scala/bin:$PATH"
