@@ -12,3 +12,5 @@
 	ui = true
 [rebase]
 	autoStash = true
+[core]
+	editor = vim
