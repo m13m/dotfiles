@@ -1,7 +1,10 @@
 export ERL_AFLAGS="-kernel shell_history enabled"
+# fly dev setup
+export FLYCTL_INSTALL="/home/maqbool/.fly"
+export PATH="$FLYCTL_INSTALL/bin:$PATH"
 
 #alias
-alias cat="bat"
+#alias cat="bat"
 alias showip="ip -c -br address show"
 alias k="kubectl"
 alias server="python3 -m http.server"
@@ -123,10 +126,10 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 ## Prompt
 
 #ZSH_THEME_CLOUD_PREFIX='✌️ '
-ZSH_THEME_CLOUD_PREFIX='☁ 🚀 ☁'
+#ZSH_THEME_CLOUD_PREFIX='☁ 🚀 ☁'
 #ZSH_THEME_CLOUD_PREFIX='☁'
 #ZSH_THEME_CLOUD_PREFIX='🦖'
-#ZSH_THEME_CLOUD_PREFIX='🐧'
+ZSH_THEME_CLOUD_PREFIX='🐧'
 #ZSH_THEME_CLOUD_PREFIX='🐉'
 
 PROMPT='%{$fg_bold[cyan]%}$ZSH_THEME_CLOUD_PREFIX %{$fg_bold[green]%}%p %{$fg[green]%}%c %{$fg_bold[cyan]%}$(git_prompt_info)%{$fg_bold[blue]%} % %{$reset_color%}⚡  '
