@@ -16,7 +16,7 @@ alias copy="xsel --clipboard < "
 export ERL_AFLAGS="-kernel shell_history enabled"
 
 
-export PATH="$PATH:/home/maqbool/.local/bin"
+#export PATH="$PATH:/home/maqbool/.local/bin"
 
 #export PATH="$PATH:/home/maqbool/bin/depot_tools"
 export TERM=xterm-color
@@ -33,7 +33,7 @@ export ZSH=/home/maqbool/.oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-#ZSH_THEME="robbyrussell"
+ZSH_THEME="robbyrussell"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -79,7 +79,7 @@ HIST_STAMPS="dd/mm/yyyy"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(asdf)
 
-source $ZSH/oh-my-zsh.sh
+source .oh-my-zsh/oh-my-zsh.sh
 
 # User configuration
 
@@ -126,13 +126,13 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 ## Prompt
 
 #ZSH_THEME_CLOUD_PREFIX='✌️ '
-ZSH_THEME_CLOUD_PREFIX='☁ 🚀 ☁'
+#ZSH_THEME_CLOUD_PREFIX='☁ 🚀 ☁'
 #ZSH_THEME_CLOUD_PREFIX='☁'
 #ZSH_THEME_CLOUD_PREFIX='🦖'
 #ZSH_THEME_CLOUD_PREFIX='🐧'
 #ZSH_THEME_CLOUD_PREFIX='🐉'
 
-PROMPT='%{$fg_bold[cyan]%}$ZSH_THEME_CLOUD_PREFIX %{$fg_bold[green]%}%p %{$fg[green]%}%c %{$fg_bold[cyan]%}$(git_prompt_info)%{$fg_bold[blue]%} % %{$reset_color%}⚡  '
+#PROMPT='%{$fg_bold[cyan]%}$ZSH_THEME_CLOUD_PREFIX %{$fg_bold[green]%}%p %{$fg[green]%}%c %{$fg_bold[cyan]%}$(git_prompt_info)%{$fg_bold[blue]%} % %{$reset_color%}⚡  '
 
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg[green]%}[%{$fg[cyan]%}"
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}"
@@ -180,3 +180,24 @@ export KERL_BUILD_DOCS=yes
 [[ -e "/home/maqbool/.local/lib/python3.8/site-packages/oci_cli/bin/oci_autocomplete.sh" ]] && source "/home/maqbool/.local/lib/python3.8/site-packages/oci_cli/bin/oci_autocomplete.sh"
 
 if [ -e /home/maqbool/.nix-profile/etc/profile.d/nix.sh ]; then . /home/maqbool/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
+
+#shareApps="$HOME/.local/share/applications"
+#snapApps="/var/lib/snapd/desktop/applications"
+
+# Detect all installed applications by snap
+#for file in $snapApps/*.desktop
+#do
+  # Get a not-ugly version of the .desktop
+  # Example: todoist_todoist.desktop -> todoist.desktop
+ # link="$shareApps/$(echo $file | cut -d '_' -f2)"
+
+  # Create new link if none exists
+#  [[ -f $link ]] || ln -s $file $link
+#done
+
+
+# NOTE: Remove this if you do NOT want automatic broken symbolic link cleanup
+#for link in $shareApps/*.desktop; do
+  # Remove any broken *.desktop symbolic links
+ # [[ -e $link ]] || rm $link
+#done

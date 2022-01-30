@@ -14,5 +14,8 @@
 	autoStash = true
 [core]
 	editor = vim
+	autocrlf = false
 [rerere]
 	enabled = true
+[pull]
+	rebase = false
