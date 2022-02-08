@@ -1,6 +1,6 @@
 [user]
 	email = maqbool@maqbool.net 
-	name = Mohd Maqbool Alam
+	name = Maqbool
 [alias]
 	ci = commit
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --branches
@@ -19,3 +19,8 @@
 	enabled = true
 [pull]
 	rebase = false
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f

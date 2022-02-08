@@ -108,3 +108,6 @@ export NVM_DIR="$HOME/.nvm"
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
+export PATH="/opt/homebrew/opt/sqlite/bin:$PATH"
+# Add Visual Studio Code (code)
+export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
