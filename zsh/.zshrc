@@ -2,7 +2,6 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
-
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -99,9 +98,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-. /opt/homebrew/opt/asdf/libexec/asdf.sh
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
-
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
@@ -111,3 +108,12 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 export PATH="/opt/homebrew/opt/sqlite/bin:$PATH"
 # Add Visual Studio Code (code)
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/maqbool/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/maqbool/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/maqbool/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/maqbool/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
+
+

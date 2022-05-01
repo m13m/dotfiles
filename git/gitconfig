@@ -15,6 +15,7 @@
 [core]
 	editor = vim
 	autocrlf = false
+	excludesFile = ~/.gitignore
 [rerere]
 	enabled = true
 [pull]
